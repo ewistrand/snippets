@@ -1,5 +1,5 @@
 // Create Custom Post Type
-function create_post_type_menu_items()
+function create_post_type_code-local()
 {
     register_taxonomy_for_object_type('category', 'post-type'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'post-type');
@@ -52,4 +52,4 @@ function create_post_type_menu_items()
 	
     ));
 }
-add_action( 'init', 'create_post_type_menu_items' );
+add_action( 'init', 'create_post_type_code-local' );
